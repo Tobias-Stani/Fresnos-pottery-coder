@@ -7,143 +7,39 @@
   
   body {
     font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
   }
   
-  /* * ============ HEADER ========== */
+  /* * ============ slider ========== */
   
-  /* .navbar {
-    position: sticky;
-    top: 0;
-    display: flex;
-  }
+  .carousel-inner {
+    max-height: 40rem;
+}
+
+
+/* ============QUIENES SOMOS============== */
+
+.maquina-escribir {
+  position: relative;
+}
+
+.maquina-escribir::after {
+  content: "";
+  border-left: 2px solid black;
+  background-color: #fff;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  animation: maquinaescribir 2s infinite alternate steps(15);
+}
   
-  .navbar a { 
-    color: #fff;
-    display: inline-block;
-    padding: 20px;
-    width: 100%;
-    text-align: center;
-    color: #000;
-    border-radius: 15px;
-    text-decoration: none;
-    transition: 0.3s ease-out all;
-  }
-  
-  .navbar a:hover {
-    background: #c1a284;
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .contenedor {
-    max-width: 1000px;
-    width: 90%;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-  } */
 
 
-
-  a,li {
-    font-family: sans-serif;
-    font-weight: 500;
-}
-
-.logo-header img {
-
-    width: 50px;
-}
-
-
-
-.header {
-    background-color: #eee ;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: .5rem 2rem;
-    
-    
-}
-
-
-.nav-menu ul {
-    display: flex;
-    align-items: center;
-}
-
-.nav-menu ul li a {
-    color: black;
-}
-
-
-.nav-menu li {
-    margin-right: 1.5rem;
-}
-
-
-.nav-menu a:hover {
-    color: #c1a284;
-}
-
-.nav-menu li:last-child {
-    background-color: #c1a284;
-    border: 2px solid #c1a284;
-    padding: .25rem .75rem;
-    border-radius: .4rem;
-
-}
-
-
-.nav-menu li:last-child:hover {
-    background: transparent;
-    border: 2px solid #c1a284 ;
-}
-
-
-
-.menu-icon img {
-    width: 30px;
-    height: 30px;
-    border-radius: 2px;
-}
-
-.menu-icon , #check {
-    display: none;
-}
 
   
-  /* * ===== CONTENEDOR IMAGEN ====== */
   
-  .contenedor-imagen {
-    height: 100vh;
-  }
-  
-  .contenedor-imagen img {
-    width: 100%;
-    height: 100%;
-    vertical-align: auto;
-    object-fit: cover;
-    object-position: 0 bottom;
-  }
-  
-  /*-------------- main------------- */
-  
-  .contenido {
-    margin: 100px;
-    /* width: 400px; */
-    padding: 10px;
-    display: flex;
-    /* hay que centrar este div */
-  }
-  
-  .hijoContenido {
-    text-align: center;
-    font-size: 20px;
-    justify-content: center;
-    align-items: center;
-  }
+
   
   /* ----------cards-------- */
   
@@ -153,6 +49,7 @@
     display: flex;
     justify-content: center;
     margin: auto;
+    margin-bottom: 50px;
     /* Agrego padding para que el contendor no se superponga con el footer al final */
     padding-bottom: 80px;
     /* Comento estas propiedades para tener un mejor con el responsive */
@@ -199,20 +96,7 @@
   
   /* cards */
   
-  /* footer */
   
-
-  footer {
-    background-color: #eee;
-    padding: 20px 0;
-    margin-top: 80px;
-    font-size: 16px;
-    text-align: center;
-  }
-  
-  footer h3 {
-    text-align: center;
-  }
   
   /* Agregue este breakpoint donde me parecia que el diseño ya comenzaba a colapsar  */
   @media (max-width: 880px) {
@@ -273,4 +157,21 @@
 
 }
 
+@media (max-width:768px) {
+  #intro {
+      width: 90%;
+  }
+}
 
+
+/* =============EFECTO MAQUINA ESCRIBIR EN QUIENES SOMOS============ */
+
+@keyframes maquinaescribir {
+  from {
+width: 100%;
+  }
+  to {
+width: 0;
+  }
+  
+}
