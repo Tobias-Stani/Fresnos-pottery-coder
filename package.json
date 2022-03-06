@@ -1,0 +1,23 @@
+{
+  "name": "html-css",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "node-sass sass/main.scss css/main.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tobias-Stani/Fresnos-pottery-coder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tobias-Stani/Fresnos-pottery-coder/issues"
+  },
+  "homepage": "https://github.com/Tobias-Stani/Fresnos-pottery-coder#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
