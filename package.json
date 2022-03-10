@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "compile:sass": "node-sass sass/main.scss css/main.css --watch"
+    "dev": "sass scss/style.scss css/style.min.css -w --no-source-map -s compressed"
   },
   "repository": {
     "type": "git",
@@ -16,8 +15,5 @@
   "bugs": {
     "url": "https://github.com/Tobias-Stani/Fresnos-pottery-coder/issues"
   },
-  "homepage": "https://github.com/Tobias-Stani/Fresnos-pottery-coder#readme",
-  "dependencies": {
-    "node-sass": "^7.0.1"
-  }
+  "homepage": "https://github.com/Tobias-Stani/Fresnos-pottery-coder#readme"
 }
