@@ -157,6 +157,10 @@
 
 }
 
+svg {
+  stroke: #eee;
+}
+
 @media (max-width:768px) {
   #intro {
       width: 90%;

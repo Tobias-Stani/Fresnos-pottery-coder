@@ -3,16 +3,14 @@
     padding: 0;
     text-decoration: none;
     list-style: none;
-    box-sizing: border-box;
+    /* box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+    box-sizing: border-box; */
   }
   
   body {
     font-family: 'Roboto', sans-serif;
-    display: grid;
-    min-height: 100vh;
-    grid-template-rows: auto 1fr auto;
+
   }
 
 
@@ -20,7 +18,7 @@
 
   /* ============HEADER============ */
 
-
+/* 
   a,li {
     font-family: sans-serif;
     font-weight: 500;
@@ -88,233 +86,66 @@
 
 .menu-icon , #check {
     display: none;
-}
+} */
 
 /*==============TERMINA HEADER================*/
 
 /* ===========CARDS========== */
 
-.container-card {
-    display: grid;
-    grid-template-rows: repeat(4, 400px);
-    height: 200vh;
-    /* gap: 20px; */
-
-    grid-template-areas: 
-    "  . card-1 . . "
-    " . . card-2 . "
-    " . card-3 . . "
-    " . . card-4 . ";
-}
-
-.card-1{
-    grid-area: card-1;
-}
-
-.card-2 {
-    grid-area: card-2;
-}
-
-.card-3 {
-    grid-area: card-3;
-}
-
-.card-4 {
-    grid-area: card-4;
-}
 
 
-
-
-h5
-{
-  margin:0px;
-  font-size:1.4em;
-  font-weight:700;
-}
-
-p
-{
-  font-size:12px;
-}
-
-.center
-{
-  height:40vh;
-  width:100%;
+.card-container {
+  width: 100%;
+  max-width: 1200px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  margin: auto;
+  margin-bottom: 50px;
+  /* Agrego padding para que el contendor no se superponga con el footer al final */
+  padding-bottom: 80px;
+  /* Comento estas propiedades para tener un mejor con el responsive */
+  /* height: 430px; */
+  /* flex-wrap: wrap; */
 }
 
-/* End Non-Essential  */
-
-.property-card
-{
-  height:20em;
-  width:15em;
-  display:-webkit-box;
-  display:-ms-flexbox;
-  display:flex;
-  -webkit-box-orient:vertical;
-  -webkit-box-direction:normal;
-  -ms-flex-direction:column;
-  flex-direction:column;
-  position:relative;
-  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  border-radius:16px;
-  overflow:hidden;
-  -webkit-box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
-  box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
-}
-/* ^-- The margin bottom is necessary for the drop shadow otherwise it gets clipped in certain cases. */
-
-/* Top Half of card, image. */
-
-.property-image
-{
-  height:10em;
-  width:15em;
-  padding:1em 2em;
-  position:Absolute;
-  top:0px;
-  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  /* background-image:url('https://cdn.photographylife.com/wp-content/uploads/2017/01/What-is-landscape-photography.jpg'); */
-  background-image: url("./../assets/foto1.jpg");
-  background-size:cover;
-  background-repeat:no-repeat;
+.card-container .tarjeta {
+  width: 320px;
+  height: 420px;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+  transition: all 0.25s;
 }
 
-.property-image-2
-{
-  height:10em;
-  width:15em;
-  padding:1em 2em;
-  position:Absolute;
-  top:0px;
-  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  /* background-image:url('https://cdn.photographylife.com/wp-content/uploads/2017/01/What-is-landscape-photography.jpg'); */
-  background-image: url("./../assets/img2.jpg");
-  background-size:cover;
-  background-repeat:no-repeat;
+.card-container .tarjeta:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
 
-.property-image-3
-{
-  height:10em;
-  width:15em;
-  padding:1em 2em;
-  position:Absolute;
-  top:0px;
-  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  /* background-image:url('https://cdn.photographylife.com/wp-content/uploads/2017/01/What-is-landscape-photography.jpg'); */
-  background-image: url("./../assets/4b.jpg");
-  background-size:cover;
-  background-repeat:no-repeat;
+.card-container .tarjeta img {
+  width: 330px;
+  height: 220px;
 }
 
-.property-image-4
-{
-  height:10em;
-  width:15em;
-  padding:1em 2em;
-  position:Absolute;
-  top:0px;
-  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  /* background-image:url('https://cdn.photographylife.com/wp-content/uploads/2017/01/What-is-landscape-photography.jpg'); */
-  background-image: url("./../assets/img4.jpg");
-  background-size:cover;
-  background-repeat:no-repeat;
+.card-container .tarjeta h4 {
+  font-weight: 600;
 }
 
-
-
-/* Bottom Card Section */
-
-.property-description
-{
-  background-color: #FAFAFC;
-  height:12em;
-  width:15em;
-  position:absolute;
-  bottom:0em;
-  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  padding: 0.5em 1em;
-  text-align:center;
+.card-container .tarjeta p {
+  padding: 0 1rem;
+  font-size: 16px;
+  font-weight: 300;
 }
 
-/* Social Icons */
-
-/* .property-social-icons
-{
-  width:1em;
-  height:1em;
-  background-color:black;
-  position:absolute;
-  bottom:1em;
-  left:1em;
-  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-} */
-
-/* Property Cards Hover States */
-
-.property-card:hover .property-description
-{
-  height:0em;
-  padding:0px 1em;
-}
-.property-card:hover .property-image
-{
-  height:18em;
+.card-container .tarjeta a {
+  font-weight: 500;
+  text-decoration: none;
+  color: #3498db;
 }
 
-.property-card:hover .property-social-icons
-{
-  background-color:white;
-}
-
-.property-card:hover .property-social-icons:hover
-{
-  background-color:blue;
-  cursor:pointer;
-}
-
-
-/* Optional */
-
-.property-image-title
-{
-text-align:center;
-position:Relative;
-top:30%;
-opacity:0;
-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
-color:black;
-font-size:1.2em;
-}
-
-.property-card:hover .property-image-title
-{
-opacity:1;
-}
-
-
-
-
+/* cards */
 
 
 
@@ -323,17 +154,6 @@ opacity:1;
 
   
 
-footer {
-    background-color: #eee;
-    /* padding: 20px 0;
-    margin-top: 80px;
-    font-size: 16px; */
-    text-align: center;
-  }
-  
-  footer h3 {
-    text-align: center;
-  }
 
   /* =========TERMINA FOOTER======== */
 
@@ -347,18 +167,12 @@ footer {
 
 /* ===========CARDS========== */
 
-@media (max-width:600px) {
-
-    .container-card {
-        display: grid;
-        height: 100vh;
-        gap: 20px;
-    
-        grid-template-areas: 
-        " card-1 "
-        " card-2 "
-        " card-3 "
-        " card-4 ";
-    }
-
+/* Agregue este breakpoint donde me parecia que el diseño ya comenzaba a colapsar  */
+@media (max-width: 880px) {
+  .container {
+    /* Cambio la direccion del eje principal del flex a columna */
+    flex-direction: column;
+    /* Centro todos los elementos hijos */
+    align-items: center;
+  }
 }

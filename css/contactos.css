@@ -16,7 +16,7 @@
   
   /* * ============ HEADER ========== */  
 
-
+/* 
   a,li {
     font-family: sans-serif;
     font-weight: 500;
@@ -84,7 +84,7 @@
 
 .menu-icon , #check {
     display: none;
-}
+} */
 
 /* ===============FORMULARIO=================== */
 /* 
@@ -196,7 +196,7 @@
 
   /* ==============header============== */
 
-  @media (max-width:768px) {
+  /* @media (max-width:768px) {
     .checkbtn {
         display: block;
     }
@@ -238,7 +238,7 @@
 
     }
 
-}
+} */
 
 
 /* ===========FORMULARIO=========== */
