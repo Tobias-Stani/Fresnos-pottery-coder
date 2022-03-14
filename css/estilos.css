@@ -96,7 +96,13 @@
   
   /* cards */
   
-  
+
+/* =======FOOTER======== */
+
+svg {
+  stroke: #93969C;
+}
+
   
   /* Agregue este breakpoint donde me parecia que el diseño ya comenzaba a colapsar  */
   @media (max-width: 880px) {
@@ -157,9 +163,7 @@
 
 }
 
-svg {
-  stroke: #eee;
-}
+
 
 @media (max-width:768px) {
   #intro {

@@ -1,0 +1,7 @@
+$mapRedes:(instagram: #3f729b, gmail:#db4a39 );
+
+@each $i, $valor in $mapRedes {
+    .#{i} {
+        color: $valor;
+    }
+}

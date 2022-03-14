@@ -16,79 +16,7 @@
 
 
 
-  /* ============HEADER============ */
-
-/* 
-  a,li {
-    font-family: sans-serif;
-    font-weight: 500;
-    
-}
-
-.logo-header img {
-
-    width: 50px;
-}
-
-
-
-.header {
-    background-color: #eee ;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: .5rem 2rem;
-    
-    
-}
-
-
-.nav-menu ul {
-    display: flex;
-    align-items: center;
-}
-
-.nav-menu ul li a {
-    color: black;
-}
-
-
-.nav-menu li {
-    margin-right: 1.5rem;
-}
-
-
-.nav-menu a:hover {
-    color: #c1a284;
-}
-
-.nav-menu li:last-child {
-    background-color: #c1a284;
-    border: 2px solid #c1a284;
-    padding: .25rem .75rem;
-    border-radius: .4rem;
-
-}
-
-
-.nav-menu li:last-child:hover {
-    background: transparent;
-    border: 2px solid #c1a284 ;
-}
-
-
-
-.menu-icon img {
-    width: 30px;
-    height: 30px;
-    border-radius: 2px;
-}
-
-.menu-icon , #check {
-    display: none;
-} */
-
-/*==============TERMINA HEADER================*/
+  
 
 /* ===========CARDS========== */
 
@@ -131,6 +59,7 @@
 
 .card-container .tarjeta h4 {
   font-weight: 600;
+  margin-top: 10px;
 }
 
 .card-container .tarjeta p {
@@ -150,9 +79,13 @@
 
 
 
+
 /* =========FOOTER======== */
 
-  
+svg {
+  stroke: #93969C;
+}
+
 
 
   /* =========TERMINA FOOTER======== */
@@ -160,7 +93,7 @@
 
   /* ===========MEDIAS QUERIS============== */
 
-/* ==============header============== */
+
 
 
 
