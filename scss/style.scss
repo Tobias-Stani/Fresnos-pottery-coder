@@ -1,4 +1,22 @@
+// pagina index
+@import './global', './slider-p1' , './quienesSomos-p1', './cards-p1' ;
 
-@import './extends' ;
-@import './maps' ;
-@import './index' ;
+// pagina galeria
+
+@import './global','./gallery-p2';
+
+// pagina servicios
+
+@import './global','./servicios-p3';
+
+//pagina contactos
+
+@import './global','./contactos-p4';
+
+// medias queris 
+
+@import './global', './mediasQueris';
+
+// footer 
+
+@import './footer';

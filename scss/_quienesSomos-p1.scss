@@ -1,0 +1,24 @@
+.maquina-escribir {
+    position: relative;
+  }
+  
+  .maquina-escribir::after {
+    content: "";
+    border-left: 2px solid black;
+    background-color: #fff;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    animation: maquinaescribir 2s infinite alternate steps(15);
+  }
+
+  @keyframes maquinaescribir {
+    from {
+  width: 100%;
+    }
+    to {
+  width: 0;
+    }
+    
+  }

@@ -1,0 +1,114 @@
+ /* ==============header============== */
+
+ @media (max-width:768px) {
+    .checkbtn {
+        display: block;
+    }
+
+    .menu-icon {
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
+
+    .nav-menu ul {
+        display: block;
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        background: #eee ;
+        width: 100%;
+        height: 100vh;
+        right: 0;
+    }
+
+    .nav-menu ul li {
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .nav-menu ul li:last-child {
+        background: none;
+        padding: 1rem;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+        transition: all .25s;
+
+    }
+
+}
+
+
+
+@media (max-width:768px) {
+  #intro {
+      width: 90%;
+  }
+}
+
+
+// index arriba 
+
+// galeria
+
+/* ============== GALERIA  ============ */
+
+@media (max-width:768px) {
+
+
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "img1 img1"
+        "img1 img1"
+        "img2 img3"
+        "img4 img4"
+        "img4 img4"
+        "img5 img5"
+        "img5 img5"
+        "img6 img7"
+        "img8 img8"
+        "img8 img8";
+    }
+
+    .gallery__picture::before {
+        font-size: 1rem;
+
+    }
+}
+
+// galeria
+
+
+// servicios
+
+
+/* Agregue este breakpoint donde me parecia que el diseño ya comenzaba a colapsar  */
+@media (max-width: 880px) {
+    .container {
+      /* Cambio la direccion del eje principal del flex a columna */
+      flex-direction: column;
+      /* Centro todos los elementos hijos */
+      align-items: center;
+    }
+  }
+
+
+  //servicios
+
+//   contactos 
+
+@media (max-width:500px) {
+    .container__img {
+        visibility: hidden;
+    }
+}
+
+// contactos
+
