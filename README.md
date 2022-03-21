@@ -18,6 +18,6 @@ Fresnos Pottery es un emprendimiento dedicado a la producción artesanal de piez
 
 
 
-###### Desarrolado con amor :tw-1f497: por :  Tobias Stanislavsky
+###### Desarrolado con amor <3 por :  Tobias Stanislavsky
 
 ###### Mis redes  :  fa-instagram: [instagram](https://www.instagram.com/toby.stani/?hl=es "instagram")       :fa-linkedin: [Linkedin](https://www.linkedin.com/in/tobias-stanislavsky-14641a22b/ "Linkedin")
